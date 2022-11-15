@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body background="image.jpg">
+<h1>Каркулятор для чайників</h1>
+<div >
+<input id="num1"/>
+<p>+</p>
+<input id="num2"/>
+<button onclick="func()">Result</button>
+
+<p id="result"></p>
+
+ <script>
+    function func(){
+          var num1 = Number(document.getElementById("num1").value);
+          var num2 = Number(document.getElementById("num2").value);
+          var result = num1 + num2;
+
+          document.getElementById("result").innerHTML = result;
+          }
+</script>
+</div>
+<br>
+<br>
+<div>
+<input id="numb1"/>
+<p>-</p>
+<input id="numb2">
+<button onclick="func1()">Result</button>
+<p id="resulta"></p>
+<script>
+function func1() {
+var numb1 = Number(document.getElementById("numb1").value);
+var numb2 = Number(document.getElementById("numb2").value);
+var resulta = numb1 - numb2;
+
+document.getElementById("resulta").innerHTML = resulta;
+}
+</script>
+</div>
+<br>
+<br>
+<div>
+<input id="num3"/>
+<p>*</p>
+<input id="num4">
+<button onclick="func2()">Result</button>
+<p id="result1"></p>
+<script>
+function func2() {
+var num3 = Number(document.getElementById("num3").value);
+var num4 = Number(document.getElementById("num4").value);
+var result1 = num3 * num4;
+
+document.getElementById("result1").innerHTML = result1;
+}
+</script>
+</div>
+<br>
+<br>
+</div>
+<br>
+<br>
+<div>
+<input id="num5"/>
+<p>/</p>
+<input id="num6">
+<button onclick="func3()">Result</button>
+<p id="result2"></p>
+<script>
+function func3() {
+var num5 = Number(document.getElementById("num5").value);
+var num6 = Number(document.getElementById("num6").value);
+var result2 = num5 / num6;
+
+document.getElementById("result2").innerHTML = result2;
+}
+</script>
+</div>
+<br>
+<br>
+<div>
+<input id="num7"/>
+<p>**</p>
+<input id="num8">
+<button onclick="func4()">Result</button>
+<p id="result3"></p>
+<script>
+function func4() {
+var num7 = Number(document.getElementById("num7").value);
+var num8 = Number(document.getElementById("num8").value);
+var result3 = num7 ** num8;
+
+document.getElementById("result3").innerHTML = result3;
+}
+</script>
+</div>
+</body>
+</html>
